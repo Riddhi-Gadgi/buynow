@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // GET all products (with filters)
-router.get("/", async (req, res) => {
+router, async (req, res) => {
   try {
     const { search, type, min, max } = req.query;
     let filter = {};
